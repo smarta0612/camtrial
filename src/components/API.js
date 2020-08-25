@@ -2,8 +2,10 @@ import axios from 'axios'
 
 const baseUrl = {}
 
-export function uploadPicture(file) {
-    return axios.post(`${baseUrl}/productpicture`, file);
+export async function uploadPicture(file) {
+  const response = await axios.post(`${baseUrl}/productpicture`, file);
+  const productData = await response.data
+  return productData
   }
 
 export function uploadPictureTwo(file){

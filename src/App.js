@@ -7,10 +7,10 @@ import CameraFeedNew from './components/CameraFeedNew'
 import CameraFeedNewest from './components/CameraFeedNewest'
 
 
-const uploadImage = async file => {
-  const formData = new FormData();
-  formData.append("image", file, "image.png");
-uploadPicture(formData)
+// const uploadImage = async file => {
+//   const formData = new FormData();
+//   formData.append("image", file, "image.png");
+// uploadPicture(formData)
 
 // const uploadImage = (file) => {
 //   const formData = new FormData();
@@ -21,7 +21,7 @@ uploadPicture(formData)
 //     'Content-type': 'multipart/form-data'
 //   }
 // })
-}
+// }
 
 export default function App() {
   return (
@@ -33,7 +33,7 @@ export default function App() {
       <MockStyle/>
     <h1>Image capture test</h1>
     <p>Capture image from camera (and upload to form)</p>
-    <CameraFeed sendFile={uploadImage} />
+    {/* <CameraFeed sendFile={uploadImage} /> */}
 </div>
   );
 }

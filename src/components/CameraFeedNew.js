@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {uploadPicture} from '../components/API'
 import Camera from 'react-html5-camera-photo';
 import 'react-html5-camera-photo/build/css/index.css';
  
@@ -7,9 +8,12 @@ import ImagePreview from './ImagePreview'; // source code : ./src/demo/AppWithIm
 function CameraFeedNew (props) {
   const [dataUri, setDataUri] = useState('');
  
-  function handleTakePhotoAnimationDone (dataUri) {
+  async function handleTakePhotoAnimationDone (dataUri) {
     console.log('takePhoto');
     setDataUri(dataUri);
+    const productData = await uploadPicture(dataUri);
+    console.log(productData)
+
   }
  
   const isFullscreen = false;
