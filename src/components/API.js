@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = 
+const baseUrl = {}
 
 export function uploadPicture(file) {
     return axios.post(`${baseUrl}/productpicture`, file);
