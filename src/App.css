@@ -1,38 +1,79 @@
+/* color scale for greens */
 .App {
   text-align: center;
+  background:#98BF82; ;
+  color:#1C3A2C;
+}
+p{
+  border: 1px solid #F2F23D;
+  background:#FFFFD9;
+  margin: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+canvas {
+  margin:auto;
+}
+button {
+  background: #F2F23D;
+  color:#6F9100;
+  border:1px solid #1C3A2C;
+}
+.picture {
+  margin:auto 0;
+  height:600px;
+  background-image: url('./pics/carbonfootprint.jpg');
+}
+.picture2 {
+  margin:auto 0;
+  height:600px;
+  background-image: url('./pics/greenglobe.jpg');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .Sustainable--Smart-1-hex { color: #F2F23D; }
+.Sustainable--Smart-2-hex { color: #1C3A2C; }
+.Sustainable--Smart-3-hex { color: #FFFFD9; }
+.Sustainable--Smart-4-hex { color: #6F9100; }
+.Sustainable--Smart-5-hex { color: #98BF82; } */
+
+
+
+/* colorscale for natural
+.App {
+  text-align: center;
+  background:#D9D0C1 ;
+  color: #260101;
+}
+p{
+  border: 1px solid  #593B2A;
+  background:#D9AC84;
+  color:#73462D;
+  margin: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+canvas {
+  margin:auto;
+}
+button {
+  background:#D9AC84;
+  color:#260101;
+  border:1px solid #73462D;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.picture {
+  margin:auto 0;
+  height:600px;
+  background-image: url('./pics/foodontable.jpg');
 }
+.picture2 {
+  margin:auto 0;
+  height:600px;
+  background-image: url('./pics/foodonplate.jpg');
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Color Theme Swatches in Hex */
+/* .No-Bounds-1-hex { color: #D9D0C1; }
+.No-Bounds-2-hex { color: #D9AC84; }
+.No-Bounds-3-hex { color: #73462D; }
+.No-Bounds-4-hex { color: #A66C4B; }
+.No-Bounds-5-hex { color: #260101; } */

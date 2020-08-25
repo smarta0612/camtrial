@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import React, { Fragment } from 'react';
+import MockStyle from './components/MockStyle'
+import {uploadPicture} from './components/API'
+
+
+import { CameraFeed } from './components/Camera-feed'
+const uploadImage = async file => {
+  const formData = new FormData();
+  formData.append('file', file);
+uploadPicture(file)
+// axios.post('url_from_flask', formData,{
+//   headers: {
+//     'Content-type': 'multipart/form-data'
+//   }
+// })
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <MockStyle/>
+    <h1>Image capture test</h1>
+    <p>Capture image from camera (and upload to form)</p>
+    <CameraFeed sendFile={uploadImage} />
+</div>
   );
 }
 
